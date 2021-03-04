@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>个人博客上线</title>
-    <url>/2021/03/03/2020-3-3%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/</url>
+    <url>/2021/03/04/2021-3-3%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>不得不说，今天是一个令人愉快的日子，因为我的个人博客在github上上线了，期间也遇到了许多的问题，不过确实也是收获颇丰的，对我来说，这次的经历是宝贵的。</p>
 <h2 id="如何在windows上搭建hexo博客系统并部署到Github"><a href="#如何在windows上搭建hexo博客系统并部署到Github" class="headerlink" title="如何在windows上搭建hexo博客系统并部署到Github"></a>如何在windows上搭建hexo博客系统并部署到Github</h2><h3 id="Hexo-是什么？"><a href="#Hexo-是什么？" class="headerlink" title="Hexo 是什么？"></a>Hexo 是什么？</h3><blockquote>
 <p>hexo 是基于Node.js的静态博客框架，可以非常方便的生成静态网页并托管到GitHub上。</p>
@@ -26,6 +26,317 @@
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML笔记（一）</title>
+    <url>/2021/03/04/2021-3-4HTML1/</url>
+    <content><![CDATA[<h2 id="1-学前了解"><a href="#1-学前了解" class="headerlink" title="1.学前了解"></a>1.学前了解</h2><h3 id="1-1-浏览器"><a href="#1-1-浏览器" class="headerlink" title="1.1 浏览器"></a>1.1 浏览器</h3><p>5大常见浏览器及其内核：</p>
+<ul>
+<li>IE 浏览器 （trident内核）</li>
+<li>Chrome 浏览器 （以前是webkit内核，现在是blink内核）</li>
+<li>Firefox 浏览器 （gecko内核）</li>
+<li>Opera 浏览器 （以前是presto内核，现在是blink内核）</li>
+<li>Safari 浏览器 （webkit内核）</li>
+<li>Microsoft Edge 浏览器 （chromium内核）</li>
+</ul>
+<p> <strong>扩展</strong>：360浏览器不算主流浏览器，因为360浏览器用的是IE浏览器的内核。浏览器的内核相当于汽车的发动机，是最核心的存在,它负责将代码转换成用户眼中的界面。</p>
+<h3 id="1-2-快捷键"><a href="#1-2-快捷键" class="headerlink" title="1.2 快捷键"></a>1.2 快捷键</h3><table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ctrl + c</td>
+<td>复制</td>
+</tr>
+<tr>
+<td>ctrl + v</td>
+<td>粘贴</td>
+</tr>
+<tr>
+<td>ctrl + x</td>
+<td>剪切</td>
+</tr>
+<tr>
+<td>ctrl + f</td>
+<td>搜索</td>
+</tr>
+<tr>
+<td>ctrl + s</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>ctrl + a</td>
+<td>全选</td>
+</tr>
+<tr>
+<td>ctrl + z</td>
+<td>撤销</td>
+</tr>
+<tr>
+<td>ctrl + y</td>
+<td>反撤销</td>
+</tr>
+<tr>
+<td>ctrl+n</td>
+<td>新建</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>重命名</td>
+</tr>
+<tr>
+<td>win + e</td>
+<td>打开我的电脑（计算机/此电脑）</td>
+</tr>
+<tr>
+<td>win+d</td>
+<td>返回桌面</td>
+</tr>
+<tr>
+<td>win+l</td>
+<td>锁屏</td>
+</tr>
+</tbody></table>
+<h3 id="1-3-文件名"><a href="#1-3-文件名" class="headerlink" title="1.3 文件名"></a>1.3 文件名</h3><p>文件名由基本名和扩展名（后缀名）组成，例：123.txt基本名是123，扩展名是txt</p>
+<p>后缀名代表文件的类型，例如：txt是文本，jpg是图片，doc是word文档</p>
+<h2 id="2-认识html"><a href="#2-认识html" class="headerlink" title="2. 认识html"></a>2. 认识html</h2><p>引子：在地址栏输入<a href="http://www.baidu.com，在敲回车的时候，网页加载出来，页面中的内容并没有存在我自己的计算机上，内容是从服务器（远程计算机）传过来的，传送的是什么？就是html">www.baidu.com，在敲回车的时候，网页加载出来，页面中的内容并没有存在我自己的计算机上，内容是从服务器（远程计算机）传过来的，传送的是什么？就是html</a></p>
+<h3 id="2-1-概念"><a href="#2-1-概念" class="headerlink" title="2.1 概念"></a>2.1 概念</h3><p>HTML（英文Hyper Text Markup Language的缩写），<code>超文本标记语言</code>。</p>
+<p>简单来说，HTML就是使用尖括号包裹起来的英文单词，浏览器对这个尖括号包裹起来的英文单词有特殊的解释</p>
+<p>超文本：  在文本文件里面除了基本文本之外还含有图片，音频，视频的内容</p>
+<p>标记：特殊符号作为的一个记号</p>
+<h3 id="2-2-html的基本结构"><a href="#2-2-html的基本结构" class="headerlink" title="2.2 html的基本结构"></a>2.2 html的基本结构</h3><p>HTML有固定的基本格式，就跟我们书信有基本的格式是一样的</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>页面的标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		这里写内容	</span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span>		</span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2-3-lt-DOCTYPE-gt-标签"><a href="#2-3-lt-DOCTYPE-gt-标签" class="headerlink" title="2.3 &lt;!DOCTYPE&gt;标签"></a>2.3 &lt;!DOCTYPE&gt;标签</h3><p><strong>声名文档类型html，告知浏览器以html的规范解析当前文档</strong></p>
+<ul>
+<li>含义</li>
+</ul>
+<p>文档声名，用来声明文档遵循的规范，告知浏览器通过此规范来解析此页面中的代码</p>
+<ul>
+<li>html5的doctype声明</li>
+</ul>
+<h3 id="2-4-制作第一个网页"><a href="#2-4-制作第一个网页" class="headerlink" title="2.4 制作第一个网页"></a>2.4 制作第一个网页</h3><p>新建文本文档（记事本），写入如下内容</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        这是我的第一个网页，怎么样，厉害吧！</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>将文件的后缀名改为html</p>
+<p>双击（默认会使用浏览器）打开</p>
+<h3 id="2-5-编码"><a href="#2-5-编码" class="headerlink" title="2.5 编码"></a>2.5 编码</h3><p>这种情况就是乱码，是因为我们输入的中文，往计算机中保存的时候，最终都要转成2进制的数据形式，也就是说有一个编码的过程，在保存文件的时候默认使用的是ANSI编码格式，浏览器显示文件中内容的时候，还需要将2进制的数据转换成文字形式显示出来，也就是说还有解码的过程，浏览器被指定为utf-8格式来解码，也就是说编码和解码不一致所造成的乱码</p>
+<h3 id="2-6-知识小百科："><a href="#2-6-知识小百科：" class="headerlink" title="2.6 知识小百科："></a>2.6 知识小百科：</h3><p><strong>字符集</strong></p>
+<p>ansi：不同的国家和地区制定了不同的标准，由此产生了 GB2312、GBK、Big5、Shift_JIS 等各自的编码标准。这些使用 1 至 4 个字节来代表一个字符的各种汉字延伸编码方式，称为 ANSI 编码。在简体中文Windows操作系统中，ANSI 编码代表 GBK 编码；在日文Windows操作系统中，ANSI 编码代表 Shift_JIS 编码。 不同 ANSI 编码之间互不兼容，当信息在国际间交流时，无法将属于两种语言的文字，存储在同一段 ANSI 编码的文本中。</p>
+<p>unicode：Unicode（<a href="https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E7%A0%81">统一码</a>、万国码、单一码）是计算机科学领域里的一项业界标准，包括字符集、编码方案等。Unicode 是为了解决传统的字符编码方案的局限而产生的，它为每种语言中的每个字符设定了统一并且唯一的<a href="https://baike.baidu.com/item/%E4%BA%8C%E8%BF%9B%E5%88%B6">二进制</a>编码，以满足跨语言、跨平台进行文本转换、处理的要求。</p>
+<p><strong>字符编码</strong></p>
+<p>UTF-8（8-bit Unicode Transformation Format）是一种针对Unicode的可变长度字符编码，又称万国码，用在网页上可以统一页面显示中文简体繁体及其它语言（如英文，日文，韩文）。</p>
+<p>GB2312是一个简体中文字符集，由6763个常用汉字和682个全角的非汉字字符组成。其中汉字根据使用的频率分为两级。一级汉字3755个，二级汉字3008个。</p>
+<p>GBK即汉字内码扩展规范，K为扩展的汉语拼音中“扩”字的声母。英文全称Chinese Internal Code Specification。GBK编码标准兼容GB2312，共收录汉字21003个、符号883个，并提供1894个造字码位，简、繁体字融于一库。</p>
+<p>Big5 <strong>又称为</strong>大五码<strong>或</strong>五大码**，是使用<a href="https://baike.baidu.com/item/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87">繁体中文</a>（正体中文）社区中最常用的电脑<a href="https://baike.baidu.com/item/%E6%B1%89%E5%AD%97">汉字</a><a href="https://baike.baidu.com/item/%E5%AD%97%E7%AC%A6%E9%9B%86">字符集</a>标准，共收录13,060个汉字。虽普及于<a href="https://baike.baidu.com/item/%E5%8F%B0%E6%B9%BE">台湾</a>、<a href="https://baike.baidu.com/item/%E9%A6%99%E6%B8%AF">香港</a>与<a href="https://baike.baidu.com/item/%E6%BE%B3%E9%97%A8">澳门</a>等繁体中文通行区</p>
+<h2 id="3-编辑器介绍"><a href="#3-编辑器介绍" class="headerlink" title="3.编辑器介绍"></a>3.编辑器介绍</h2><p>Dreamweaver、Sublime、Editplus（notepad++）、</p>
+<p>Dreamweaver：简称DW，适合html+css开发，优点：代码提示比较好，缺点：打开速度慢，收费</p>
+<p>EditPlus：小型的编辑器，优点：打开速度快，缺点：代码提示需要手动设置，做大型项目不太方便</p>
+<p>Sublime：适合javascript开发，优点：快捷操作比较方便，打开速度比较快</p>
+<p>phpstorm和NetBeans适合php开发</p>
+<h2 id="4-注释"><a href="#4-注释" class="headerlink" title="4.注释"></a>4.注释</h2><p>概念：我们在看书的时候，可以在书上看到注解，我们写代码也需要做一些备注—-浏览器不解析的标签</p>
+<p>作用：给程序员做提示，提示开发人员或者便于开发人员理解和阅读</p>
+<p>语法：<code>&lt;!--注释的内容--&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        这是我的第一个网页，怎么样，厉害吧！</span><br><span class="line">        <span class="comment">&lt;!--这是主体内容--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-常见的标记"><a href="#5-常见的标记" class="headerlink" title="5.常见的标记"></a>5.常见的标记</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>一级标题：<code>&lt;h1&gt;&lt;/h1&gt;</code></p>
+<p>二级标题：<code>&lt;h2&gt;&lt;/h2&gt;</code></p>
+<p>…</p>
+<p>六级标题：<code>&lt;h6&gt;&lt;/h6&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h4</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h5</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span>&gt;</span>第一个网页<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        这是我的第一个网页，怎么样，厉害吧！</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>脚下留心：</p>
+<p>1.标题都是加粗的，数字越大，字体越小，数字最大为6</p>
+<p>2.标题标签在SEO搜索引擎中权重比较大</p>
+<p>多学一招：</p>
+<p>SEO：（Search Engine Optimization）：汉译为<a href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">搜索引擎</a>优化</p>
+<p>我们在搜索引擎中搜索东西，会出来很多网页，我们习惯点击排名靠前的链接，也就是说一旦这个网页排名靠前了，那用户量就会增多，网站就有价值了，网页的点击率和流量就都有了。如何才能让网页排名靠前呢？就是要讨好搜索引擎。提升网页在搜索引擎中的排名就是搜索引擎优化。</p>
+<p>如何优化：<br>1、花钱(竞价排名)买关键字  见效快，花钱多（买点击量，点完次数就不会靠前了）<br>2、让页面更加规范，语义更加明确（在合适的地方使用合适的标签），搜索引擎更喜欢<br>3、发外链，在贴吧、论坛等地方发网站的链接</p>
+<h3 id="2-排版标记"><a href="#2-排版标记" class="headerlink" title="2.排版标记"></a>2.排版标记</h3><p>a) 段落标记：<code>&lt;p&gt;&lt;/p&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>2019年全国两会来了。回顾2013-2018年全国两会，习近平先后36次“下团组”，和代表委员亲切交流、共商国是，讲话涉及科技创新、脱贫攻坚、深化改革、作风建设等。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>十三届全国人大二次会议3月4日（星期一）上午11时15分在人民大会堂新闻发布厅举行新闻发布会，由大会发言人就大会议程和人大工作相关的问题回答中外记者提问。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>b) 水平线：<code>&lt;hr&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	2019年全国两会来了。回顾2013-2018年全国两会，习近平先后36次“下团组”，和代表委员亲切交流、共商国是，讲话涉及科技创新、脱贫攻坚、深化改革、作风建设等。</span><br><span class="line">	<span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">	十三届全国人大二次会议3月4日（星期一）上午11时15分在人民大会堂新闻发布厅举行新闻发布会，由大会发言人就大会议程和人大工作相关的问题回答中外记者提问。</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>c) 换行：<code>&lt;br&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	今天<span class="tag">&lt;<span class="name">br</span>&gt;</span>明天<span class="tag">&lt;<span class="name">br</span>&gt;</span>后天</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-字体标记"><a href="#3-字体标记" class="headerlink" title="3.字体标记"></a>3.字体标记</h3><p>a) 粗体：<code>&lt;b&gt;&lt;/b&gt;</code></p>
+<p>b) 斜体：<code>&lt;i&gt;&lt;/i&gt;</code></p>
+<p>c) 下划线：<code>&lt;u&gt;&lt;/u&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">b</span>&gt;</span>加粗的字<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">i</span>&gt;</span>倾斜的字<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">u</span>&gt;</span>带有下划线的字<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-强调标记"><a href="#4-强调标记" class="headerlink" title="4.强调标记"></a>4.强调标记</h3><p>a) 强调标记，通过加粗来强调：<code>&lt;strong&gt;&lt;/strong&gt;</code></p>
+<p>b) 强调标记，通过斜体来强调：<code>&lt;em&gt;&lt;/em&gt;</code></p>
+<p>c) 强调标记，通过下划线来强调：<code>&lt;ins&gt;&lt;/ins&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">strong</span>&gt;</span>加粗的字<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">em</span>&gt;</span>倾斜的字<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ins</span>&gt;</span>带有下划线的字<span class="tag">&lt;/<span class="name">ins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>脚下留心：</p>
+<ul>
+<li>字体标记和强调标记都能实现视觉效果，但含义是有区别的，强调标记在SEO（搜索引擎优化）的角度，权重更高</li>
+<li>强调标签具有语义化，语义好的网页更受SEO的喜欢，在搜索引擎里面的排名会更靠前</li>
+</ul>
+<p> 分析：</p>
+<p>1.一个大标题</p>
+<p>2.一个小标题</p>
+<p>3.一个分割线</p>
+<p>4.三个段落</p>
+<p>代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>中央气象台发暴雨蓝色预警 东北局部地区有大暴雨<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h6</span>&gt;</span>2018-08-23 06:07:00 来源：中国新闻网（北京）<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>(原标题：中央气象台发布暴雨蓝色预警 东北局部地区有大暴雨)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>中新网8月23日电 中央气象台8月23日06时发布暴雨蓝色预警：<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>预计8月23日08时至24日08时，黑龙江东北部、吉林中东部、辽宁东部、云南西南部、贵州中部、重庆南部、福建西北部和东南部以及台湾岛等地的部分地区有大到暴雨，其中，吉林东南部、辽宁东部、贵州中部以及台湾岛东部局地有大暴雨或特大暴雨(250~300毫米)；上述部分地区伴有短时强降水(小时雨量20~50毫米，最大可达60毫米以上)，局地有雷暴大风等强对流天气。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="6-标签的属性"><a href="#6-标签的属性" class="headerlink" title="6.标签的属性"></a>6.标签的属性</h2><h3 id="1-标签的分类"><a href="#1-标签的分类" class="headerlink" title="1.标签的分类"></a>1.标签的分类</h3><p>双标签：成对出现的标签叫双标签，内容写在标签中间—–&gt;<code>&lt;p&gt;段落&lt;/p&gt;</code></p>
+<p>单标签：单个的标签叫做单标签，没有内容只有属性—–&gt;<code>&lt;hr&gt;</code></p>
+<h3 id="2-属性"><a href="#2-属性" class="headerlink" title="2.属性"></a>2.属性</h3><ul>
+<li>每个标签都有自己的属性（特性）—–单标签和双标签都有属性</li>
+<li>一个标签可以有多个属性</li>
+<li>每个属性都有对应的值，值要用引号引起来（单引号和双引号都可以）</li>
+<li>属性之间使用空格隔开</li>
+<li>属性没有顺序</li>
+</ul>
+<h3 id="3-属性的使用"><a href="#3-属性的使用" class="headerlink" title="3.属性的使用"></a>3.属性的使用</h3><p>语法：<code>&lt;标签名 属性1=&quot;值1&quot; 属性=&quot;值2&quot;&gt;&lt;/标签名&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">&quot;7&quot;</span> <span class="attr">face</span>=<span class="string">&quot;叶根友毛笔行书2.0版&quot;</span> <span class="attr">color</span>=<span class="string">&quot;red&quot;</span>&gt;</span>字体标签<span class="tag">&lt;/<span class="name">font</span>&gt;</span>普通文字</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个字体ie可以识别</p>
+<h2 id="7-列表"><a href="#7-列表" class="headerlink" title="7.列表"></a>7.列表</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h3><p>链接：<a href="https://www.163.com/">https://www.163.com/</a></p>
+<table>
+<thead>
+<tr>
+<th>标签名称</th>
+<th>无序列表标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标签</td>
+<td><ul>       <li></li>       …….  </ul></td>
+</tr>
+<tr>
+<td>属   性</td>
+<td>Type 设置列表项目符号样式       circle - 空心圆         square - 正方形         disc  - 实心圆（默认）</td>
+</tr>
+<tr>
+<td>描   述</td>
+<td>注意：  1. 列表项里面至少有一个li标签（至少1一个，可以写N个）  2. 写无序列表必须写ul  3. 内容必须写在li标签内  说明：       列表项目结构中没有先后顺序的列表，称之为：无序列表</td>
+</tr>
+</tbody></table>
+<p>ul：代表标签的模块，范围</p>
+<p>li：代表列表的每一项</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>丹麦国家队暂时&quot;解散&quot;！足协征召业余球员组队参赛 <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>世界足坛最惨之人出炉!只有他欣赏不了梅西的演出<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>当卢卡库的&quot;大笨钟&quot;晃过门将时，真以为是大罗来了 <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>C罗又美黑!甲板上拥翘臀女友入眠 他如今是CR5.5?<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>揭C罗不坐尤文大巴之谜 葡总理:他是全国的荣耀! <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>巴萨官推:梅西就是最佳 真坑!1月要赴美踢西甲<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：ul标签的直接子元素必须是li标签，li标签是放置列表的容器，可以放任何东西</p>
+<h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h3><p>链接：<a href="https://help.aliyun.com/document_detail/59210.html?spm=a2c4g.11174283.6.546.7c9f2c42lW17FQ">https://help.aliyun.com/document_detail/59210.html?spm=a2c4g.11174283.6.546.7c9f2c42lW17FQ</a></p>
+<table>
+<thead>
+<tr>
+<th>标签名称</th>
+<th>有序列表标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标签格式</td>
+<td><ol>       <li></li>        …….  </ol></td>
+</tr>
+<tr>
+<td>属   性</td>
+<td>Type 设置列表项目编号样式：   A,a - 设置项目编号为大小写英文字母   I,i - 设置项目编号为大小写罗马数字   1 - 设置项目编号为阿拉伯数字（默认）</td>
+</tr>
+<tr>
+<td>描   述</td>
+<td>注意：  1. 至少有一个li标签  2. 内容必须写在li标签里  3. 写有序列表必须写ol标签  4. 设置项目编号样式为英文字母，超过26个字母，会以aa,ab,ac这样的规律递增  说明：       列表结构中有先后顺序并且可以设置项目编号为（1,2,3或者a、b、c）的列表，称之为：有序列表</td>
+</tr>
+</tbody></table>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第一项<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第二项<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第三项<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-自定义列表"><a href="#3-自定义列表" class="headerlink" title="3.自定义列表"></a>3.自定义列表</h3><p>链接：<a href="https://www.mi.com/">https://www.mi.com/</a></p>
+<table>
+<thead>
+<tr>
+<th>标签名称</th>
+<th>定义列表标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标签格式</td>
+<td><dl>       <dt>标题</dt>       <dd>描述</dd>        …….  </dl></td>
+</tr>
+<tr>
+<td>属    性</td>
+<td></td>
+</tr>
+<tr>
+<td>描    述</td>
+<td>注意：  1. 必须写一个dt但是可以不写dd;dt也可以写多个  2. Dd是针对于前面最近的一个dt的表述  3. 内容必须写在dt或者dd里面  说明：    不仅仅是一列项目，还是项目标题和项目描述/注释的组合</td>
+</tr>
+</tbody></table>
+<p>代码</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dt</span>&gt;</span>特色服务<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dd</span>&gt;</span>F 码通道<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dd</span>&gt;</span>礼物码<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dd</span>&gt;</span>防伪查询<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：dl是列表模块，dt是列表的标题，dd是标题的补充说明，dl和dd是并列的标签</p>
+<h2 id="8-超链接"><a href="#8-超链接" class="headerlink" title="8.超链接"></a>8.超链接</h2><p>标记：<code>&lt;a&gt;&lt;/a&gt;</code></p>
+<p>target（目标属性）：</p>
+<p>​    _blank：跳转到一个新的窗口页面</p>
+<p>​    _self：在原页面的窗口中打开新页面</p>
+<p>title：当鼠标悬浮到链接上的时候，显示title属性的值</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">title</span>=<span class="string">&quot;锄禾日当午，汗滴禾下土。&quot;</span>&gt;</span>锄禾日当午<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-内部链接"><a href="#1-内部链接" class="headerlink" title="1.内部链接"></a>1.内部链接</h3><p>在同一个站点内页面间跳转——-在自己电脑本地进行跳转</p>
+<p>在本地文件之间跳转</p>
+<h3 id="2-外部链接"><a href="#2-外部链接" class="headerlink" title="2.外部链接"></a>2.外部链接</h3><p>跳转到其他网站的链接</p>
+<p>注意：如果跳转外网页面，例如：百度、新浪等，必须要加<a href="http://-----协议/">http://-----协议</a></p>
+<h3 id="3-下载链接"><a href="#3-下载链接" class="headerlink" title="3.下载链接"></a>3.下载链接</h3><p>链接跳转到一个浏览器无法打开的文件时，就会自动出现下载界面</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;1.zip&quot;</span>&gt;</span>下载<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-锚点链接"><a href="#4-锚点链接" class="headerlink" title="4.锚点链接"></a>4.锚点链接</h3><p>链接：<a href="https://baike.baidu.com/item/%E5%88%98%E5%BE%B7%E5%8D%8E/114923?fr=aladdin">https://baike.baidu.com/item/%E5%88%98%E5%BE%B7%E5%8D%8E/114923?fr=aladdin</a></p>
+<p>语法：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#目标名&quot;</span>&gt;</span>去目标地点<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;标签名 id=&quot;目标名&quot;&gt;目标地点&lt;/标签名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在需要跳转的地方添加一个锚点</p>
+<h2 id="9-路径"><a href="#9-路径" class="headerlink" title="9.路径"></a>9.路径</h2><h3 id="1-相对路径"><a href="#1-相对路径" class="headerlink" title="1.相对路径"></a>1.相对路径</h3><p>相对于当前的文件的地址，从当前文件出发去找目标</p>
+<p>当前文件和目标文件在同一个站点中</p>
+<p>当前文件和目标文件所在目录同级</p>
+<p>前面省略了./，代表当前文件所在的文件夹下</p>
+<p>当前页面的上级目录和目标文件同级</p>
+<p>../代表当前文件的上一级目录下</p>
+<h3 id="2-绝对路径"><a href="#2-绝对路径" class="headerlink" title="2.绝对路径"></a>2.绝对路径</h3><p>c:\face.txt，以盘符开头，从计算机出发去找目标</p>
+<h2 id="10-图片标签"><a href="#10-图片标签" class="headerlink" title="10.图片标签"></a>10.图片标签</h2><p>语法：<code>&lt;img src=&#39;图片的源&#39; alt=&#39;&#39; title=&#39;&#39; width=&#39;&#39; height=&#39;&#39; /&gt;</code></p>
+<p>src：图片的地址</p>
+<p>alt：当图片无法显示的时候，将alt后面的文字显示在图片的位置上</p>
+<p>title：当鼠标放到图片位置的时候显示提醒性文字。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;1.png&quot;</span> <span class="attr">title</span>=<span class="string">&quot;这是卡哇伊&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;2.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;这是猫咪&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="11-pre标签"><a href="#11-pre标签" class="headerlink" title="11.pre标签"></a>11.pre标签</h2><p>预排版标签：<code>&lt;pre&gt;&lt;/pre&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line">    									上</span><br><span class="line">    左																右</span><br><span class="line">    									下</span><br><span class="line">    <span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
       </tags>
   </entry>
 </search>
